@@ -27,17 +27,17 @@ export const Skills = () => {
             <Container>
                 <Row>
                     <Col>
-                        <div className="skill-bx">
+                        <div className="skill-bx bordered">
                             <h2>Services</h2>
-                            <p>We provide the best Services for our Horses. Because only a horse  knows what a horse wants</p>
+                            <p>Hacemos muchas cosas y molamos mucho de verdad, creeme</p>
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
                                 <div className="item">
                                     <img src={''} alt="image" />
-                                    <h5>Riders Community</h5>
+                                    <h5>Hago cosas de publi</h5>
                                 </div>
                                 <div className="item">
                                     <img src={''} alt="image" />
-                                    <h5>Best Horse Caring</h5>
+                                    <h5>Fotos tambien, creo</h5>
                                 </div>
                                 <div className="item">
                                     <img src={''} alt="image" />

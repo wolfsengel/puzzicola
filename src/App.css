@@ -15,6 +15,19 @@
 	font-weight: 400;
 }
 
+/************Custom css************/
+/****My colors*****/
+:root {
+  --primary-color: #bd9bfc;
+  --secondary-color:#dfed50 ;
+  --third-color: #eeb376;
+}
+
+.bordered{
+  border: 5px solid var(--secondary-color);
+  padding: 5%;
+}
+
 /************ Default Css ************/
 * {
   margin: 0;
@@ -31,8 +44,8 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  background-color: #121212 !important;
-  color: #fff !important;
+  background-color: var(--primary-color) !important;
+  color: var(--secondary-color) !important; /*var(--secondary-color)  CAMBIOS AQUI */
   font-family: 'Centra', sans-serif !important;
 }
 
@@ -88,21 +101,22 @@ nav.navbar {
   width: 100%;
   top: 0;
   z-index: 9999;
-  transition:  0.32s ease-in-out;
+  transition:  0.3s ease-in-out;
+  border: var(--secondary-color) solid 5px;
 }
 nav.navbar.scrolled {
   padding: 0px 0;
-  background-color: #121212;
+  background-color: var(--primary-color);
 }
 nav.navbar a.navbar-brand {
     width: 9%;
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
-  color: #fff !important;
+  color: var(--secondary-color)!important; /*var(--secondary-color) CAMBIOS AQUI */
   letter-spacing: 0.8px;
   padding: 0 25px;
-  font-size: 18px;
+  font-size: 20px;
   opacity: 0.75;
 }
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
@@ -120,21 +134,20 @@ span.navbar-text {
 .social-icon a {
     width: 42px;
     height: 42px;
-    background: rgba(217, 217, 217, 0.1);
+    background: rgba(223,237,80,0.3);
     display: inline-flex;
     border-radius: 50%;
     margin-right: 6px;
     align-items: center;
     justify-content: center;
     line-height: 1;
-    border: 1px solid rgba(255, 255, 255, 0.5);
 }
 .social-icon a::before {
     content: "";
     width: 42px;
     height: 42px;
     position: absolute;
-    background-color: #ffffff;
+    background-color: var(--secondary-color); /*var(--secondary-color) CAMBIOS AQUI */
     border-radius: 50%;
     transform: scale(0);
 	transition: 0.3s ease-in-out;
@@ -152,8 +165,8 @@ span.navbar-text {
 }
 .navbar-text button {
   font-weight: 700;
-  color: #fff;
-  border: 1px solid #fff;
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
   padding: 18px 34px;
   font-size: 18px;
   margin-left: 18px;
@@ -169,7 +182,7 @@ span.navbar-text {
   width: 0%;
   height: 100%;
   position: absolute;
-  background-color: #fff;
+  background-color: var(--secondary-color);
   left: 0;
   top: 0;
   z-index: -1;
@@ -194,19 +207,19 @@ nav.navbar .navbar-toggler-icon {
   height: 17px;
   background-image: none;
   position: relative;
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid var(--secondary-color);
   transition: all 300ms linear;
   top: -2px;
 }
 nav.navbar .navbar-toggler-icon:focus {
-	border-bottom: 2px solid #fff;
+	border-bottom: 2px solid var(--secondary-color);
 }
 nav.navbar .navbar-toggler-icon:after,
 nav.navbar .navbar-toggler-icon:before {
 	width: 24px;
 	position: absolute;
 	height: 2px;
-	background-color: #fff;
+	background-color: var(--secondary-color);
 	top: 0;
 	left: 0;
 	content: '';
@@ -218,12 +231,12 @@ nav.navbar .navbar-toggler-icon:after {
 }
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
 	transform: rotate(45deg);
-	background-color: #fff;
+	background-color: var(--secondary-color);
 	height: 2px;
 }
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
 	transform: translateY(8px) rotate(-45deg);
-	background-color: #fff;
+	background-color: var(--secondary-color);
 	height: 2px;
 }
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
@@ -234,10 +247,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
-  background-image: url('./assets/img/banner-bg-dessert.jpg');
+  background: var(--primary-color);
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
+  border: solid 5px var(--secondary-color);
 }
 .banner .tagline {
   font-weight: 700;
@@ -258,14 +272,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: block;
 }
 .banner p {
-  color: #B8B8B8;
-  font-size: 18px;
+  color: var(--secondary-color);
+  font-size: 22px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
   width: 96%;
 }
 .banner button {
-  color: #fff;
+  color: var(--secondary-color);
   font-weight: 700;
   font-size: 20px;
   margin-top: 60px;
@@ -306,10 +320,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
 }
 .skill-bx {
-  background: #151515;
-  border-radius: 64px;
+  background: var(--primary-color);
   text-align: center;
-  padding: 60px 50px;
+  padding: 20px 20px;
   margin-top: -60px;
 }
 .skill h2 {
@@ -317,8 +330,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	font-weight: 700;
 }
 .skill p {
-    color: #B8B8B8;
-    font-size: 18px;
+    color: var(--secondary-color);
+    font-size: 22px;
     letter-spacing: 0.8px;
     line-height: 1.5em;
     margin: 14px 0 75px 0;
@@ -374,7 +387,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-color: transparent;
   border-radius: 0;
   padding: 17px 0;
-  color: #fff;
+  color: var(--secondary-color);
   width: 100%;
   font-size: 17px;
   letter-spacing: 0.8px;
@@ -484,7 +497,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 20px;
-  color: #fff;
+  color: var(--secondary-color);
   margin: 0 0 8px 0;
   padding: 18px 26px;
   font-weight: 500;
@@ -493,13 +506,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transition: 0.3s ease-in-out;
 }
 .contact form input:focus, .contact form textarea:focus {
-  background: rgba(255, 255, 255, 1);
+  background: var(--secondary-color);
   color: #121212;
 }
 .contact form input::placeholder, .contact form textarea::placeholder {
   font-size: 16px;
   font-weight: 400;
-  color: #fff;
+  color: var(--secondary-color);
 }
 .contact form input:focus::placeholder, .contact form textarea:focus::placeholder {
   color: #121212;
@@ -508,7 +521,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .contact form button {
   font-weight: 700;
   color: #000;
-  background-color: #fff;
+  background-color: var(--secondary-color);
   padding: 14px 48px;
   font-size: 18px;
   margin-top: 25px;
@@ -521,7 +534,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
 }
 .contact form button:hover {
-  color: #fff;
+  color: var(--secondary-color);
 }
 .contact form button::before {
   content: "";
@@ -547,7 +560,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-repeat: no-repeat;
 }
 .newsletter-bx {
-  background: #FFFFFF;
+  background: var(--secondary-color);
   border-radius: 55px;
   color: #121212;
   padding: 85px 125px;
@@ -560,7 +573,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1.2em;
 }
 .new-email-bx {
-  background: #fff;
+  background: var(--secondary-color);
   padding: 5px;
   border-radius: 20px;
   position: relative;
@@ -581,7 +594,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .new-email-bx::after {
   content: "";
-  background: #fff;
+  background: var(--secondary-color);
   border-radius: 20px;
   position: absolute;
   z-index: -1;
@@ -601,7 +614,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .new-email-bx button {
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
   padding: 20px 65px;
-  color: #fff;
+  color: var(--secondary-color);
   font-weight: 500;
   letter-spacing: 0.5px;
   border-radius: 18px;
@@ -612,7 +625,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .footer p {
   font-weight: 400;
   font-size: 14px;
-  color: #B8B8B8;
+  color: var(--third-color);
   letter-spacing: 0.5px;
   margin-top: 20px;
 }

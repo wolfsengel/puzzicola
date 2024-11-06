@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/img/transparent-horse.png";
+import headerImg from "../assets/img/logo_aitana_bgless.png";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 //import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -11,7 +11,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "GallopGate", "Experience", "Trust", "Actual Horses"  ];
+  const toRotate = [ "Puzzy Cola" ];
   const period = 1000;
 
   useEffect(() => {
@@ -40,7 +40,7 @@ export const Banner = () => {
     } else if (isDeleting && updatedText === '') {
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
-      setIndex(1);
+      setIndex(100);
       setDelta(500);
     } else {
       setIndex(prevIndex => prevIndex + 1);
@@ -54,11 +54,10 @@ export const Banner = () => {
           <Col xs={12} md={6} xl={7}>
             <TrackVisibility>
               {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Welcome to GallopGate</span>
-                <h1>{`Hi, we are `} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Experience", "Trust", "Actual Horses" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Your trusted partner in horse maintenance. Our passion for equine care shines through in every service we offer, from grooming and nutrition to health checks and training. Let us help you ensure your horse is always in peak condition. Discover the difference with GallopGate - where your horse's well-being is our top priority.</p>
-                  <button onClick={() => console.log('connect')}>Find Out <ArrowRightCircle size={25} /></button>
+              <div className={isVisible ? "animate__animated animate__fadeIn bordered" : "bordered"}>
+                <h1>{`Somos `} <span className="txt-rotate" dataPeriod="1000"><span className="wrap">{text}</span></span></h1>
+                  <p>Your trusted partner in bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla</p>
+                  <button onClick={() => console.log('connect')}>Conócenos <ArrowRightCircle size={25} /></button>
               </div>}
             </TrackVisibility>
           </Col>
