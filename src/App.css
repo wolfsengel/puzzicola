@@ -24,6 +24,7 @@
 }
 
 .bordered{
+  border-radius: 0%;
   border: 5px solid var(--secondary-color);
   padding: 5%;
 }
@@ -60,6 +61,7 @@ p, a, li, button, ul {
   padding: 0;
   line-height: normal;
   text-decoration: none;
+  color: var(--secondary-color);
 }
 
 a:hover {
@@ -359,7 +361,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .project {
   padding: 80px 0;
   position: relative;
-  background-color: black;
+  background-color: var(--primary-color);
 }
 .project h2 {
 	font-size: 45px;
@@ -367,7 +369,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
 }
 .project p {
-  color: #B8B8B8;
+  color: var(--secondary-color);
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
@@ -375,6 +377,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
   width: 56%;
 }
+
 .project .nav.nav-pills {
   width: 72%;
   margin: 0 auto;
@@ -430,13 +433,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .proj-imgbx {
   position: relative;
-  border-radius: 30px;
   overflow: hidden;
   margin-bottom: 24px;
 }
 .proj-imgbx::before {
   content: "";
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  background: linear-gradient(90.21deg, var(--primary-color) -5.91%, var(--third-color) 111.58%);
   opacity: 0.85;
   position: absolute;
   width: 100%;
