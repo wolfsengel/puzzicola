@@ -1,0 +1,54 @@
+{
+  "principalText": {
+    "title": "TEXTO PRINCIPAL",
+    "content": "Nos movemos como pez en el agua en cualquier red social y por eso nos dedicamos a ellas. Queremos hacer ruido, ayudarte a crecer y crear un nexo real con tu público. ¿Conectamos?"
+  },
+  "services": {
+    "title": "TEXTO SERVICIOS",
+    "categories": [
+      {
+        "name": "GESTIÓN DE REDES SOCIALES",
+        "details": [
+          "Te ayudamos a descubrir cómo sacar partido a tus redes.",
+          "Creamos una comunidad fiel gracias a la labor de Community Manager.",
+          "Ideamos una estrategia adecuada a los servicios o productos que ofreces.",
+          "Planificamos el contenido con la finalidad de satisfacer a tu audiencia."
+        ]
+      },
+      {
+        "name": "FOTOGRAFÍA",
+        "details": [
+          "Captamos la esencia de tu marca.",
+          "Damos visibilidad a tu negocio a través de una fotografía de calidad.",
+          "Nos adaptamos a las tendencias creativas del momento.",
+          "Organizamos sesiones periódicas y actualizamos tu imagen."
+        ]
+      },
+      {
+        "name": "EVENTOS",
+        "details": [
+          "Creamos una experiencia de marca real.",
+          "Facilitamos conexiones valiosas con clientes, influencers y socios estratégicos para abrir nuevas oportunidades.",
+          "Aumentamos la visibilidad de tu negocio generando un impacto duradero.",
+          "Planificamos cada detalle para que no tengas que preocuparte de nada."
+        ]
+      },
+      {
+        "name": "COPYWRITING",
+        "details": [
+          "Ideamos el copy creativo y directo que necesitas para atraer la atención de tu público.",
+          "Creamos un diálogo coherente que te conecte con tu comunidad.",
+          "Redactamos y corregimos textos."
+        ]
+      },
+      {
+        "name": "DISEÑO",
+        "details": [
+          "Hacemos realidad tus ideas transformándolas en imágenes.",
+          "Creamos contenido para redes, formatos a pequeña y gran escala, cartelería, tarjetas... todo lo que puedas imaginar.",
+          "Diseñamos priorizando siempre la imagen que quieres transmitir."
+        ]
+      }
+    ]
+  }
+}

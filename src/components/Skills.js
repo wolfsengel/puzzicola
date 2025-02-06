@@ -6,6 +6,7 @@ import skillImage2 from '../assets/img/skillimage2.jpg';
 import skillImage3 from '../assets/img/skillimage3.jpg';
 import skillImage4 from '../assets/img/skillimage4.jpg';
 import skillImage5 from '../assets/img/skillimage5.jpg';
+import texts from '../assets/texts/texts.json';
 
 export const Skills = () => {
     const responsive = {
@@ -27,34 +28,36 @@ export const Skills = () => {
         },
     };
 
-    const items = [
-        { src: skillImage1, alt: 'image', title: 'Hago cosas de publi' },
-        { src: skillImage2, alt: 'image', title: 'Fotos tambien, creo' },
-        { src: skillImage3, alt: 'image', title: '24/7 Client Service' },
-        { src: skillImage4, alt: 'image', title: 'We solve World Hunger' },
-        { src: skillImage5, alt: 'image', title: 'Cure for Cancer' }
-    ];
+    const images = [skillImage1, skillImage2, skillImage3, skillImage4, skillImage5];
+    const items = texts.services.categories.map((service, index) => ({
+        src: images[index],
+        alt: 'image',
+        title: service.name
+    }));
 
     return (
-        <section className="skill" id="skills">
-            <Container>
-                <Row>
-                    <Col>
-                        <div className="skill-bx bordered">
-                            <h2>Services</h2>
-                            <p>Hacemos muchas cosas y molamos mucho de verdad, creeme</p>
-                            <Carousel responsive={responsive} infinite={true} className="skill-slider">
-                                {items.map((item, index) => (
-                                    <div className="item" key={index}>
-                                        <img src={item.src} alt={item.alt} />
-                                        <h5>{item.title}</h5>
-                                    </div>
-                                ))}
-                            </Carousel>
-                        </div>
-                    </Col>
-                </Row>
-            </Container>
-        </section>
+        <>
+            <div id="skills" style={{ height: "100px" }}></div>
+            <section className="skill" >
+                <Container>
+                    <Row>
+                        <Col>
+                            <div className="skill-bx bordered" >
+                                <h2>Servicios</h2>
+                                <p>Hacemos muchas cosas y molamos mucho de verdad, creeme</p>
+                                <Carousel responsive={responsive} infinite={true} className="skill-slider">
+                                    {items.map((item, index) => (
+                                        <div className="item" key={index}>
+                                            <img src={item.src} alt={item.alt} />
+                                            <h5>{item.title}</h5>
+                                        </div>
+                                    ))}
+                                </Carousel>
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>
+            </section>
+        </>
     )
 }

@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/logo_aitana_bgless.png";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
+import texts from '../assets/texts/texts.json';
 //import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -56,7 +57,7 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn bordered" : "bordered"}>
                 <h1>{`Somos `} <span className="txt-rotate" dataPeriod="1000"><span className="wrap">{text}</span></span></h1>
-                  <p>Your trusted partner in bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla</p>
+                  <p>{texts.principalText.content}</p>
                   <button onClick={() => console.log('connect')}>Conócenos <ArrowRightCircle size={25} /></button>
               </div>}
             </TrackVisibility>
