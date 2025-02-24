@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/logo_aitana_bgless.png";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import texts from '../assets/texts/texts.json';
-//import 'animate.css';
+import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
 export const Banner = () => {
@@ -51,14 +51,14 @@ export const Banner = () => {
   return (
     <section className="banner" id="home">
       <Container>
-        <Row className="aligh-items-center">
+        <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn bordered" : "bordered"}>
-                <h1>{`Somos `} <span className="txt-rotate" dataPeriod="1000"><span className="wrap">{text}</span></span></h1>
-                  <p>{texts.principalText.content}</p>
-                  <button onClick={() => console.log('connect')}>Conócenos <ArrowRightCircle size={25} /></button>
+                <h1 style={{ fontSize: '4rem' }}>{`Somos `} <span className="txt-rotate" dataPeriod="1000"><span className="wrap">{text}</span></span></h1>
+                  <p style={{ fontSize: '2rem' }}>{texts.principalText.content}</p>
+                  <a href="#contact"><button style={{ fontSize: '2rem', padding: '15px 30px' }} >Conócenos <ArrowRightCircle size={30} /></button></a>
               </div>}
             </TrackVisibility>
           </Col>
@@ -66,7 +66,7 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  <img src={headerImg} alt="Header Img"/>
+                  <img src={headerImg} alt="Header Img" style={{ width: '100%', height: 'auto' }}/>
                 </div>}
             </TrackVisibility>
           </Col>

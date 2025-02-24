@@ -485,7 +485,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Projects Css ************/
 .contact {
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  /* background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%); */
   padding: 60px 0 200px 0;
 }
 .contact img {
@@ -522,7 +522,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #121212;
   opacity: 0.8;
 }
-.contact form button {
+#contactBtns button {
   font-weight: 700;
   color: #000;
   background-color: var(--secondary-color);
@@ -558,10 +558,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Footer Css ************/
 .footer {
   padding: 0 0 50px 0;
-  background-image: url('./assets/img/footer-bg.png');
+  background-color: var(--primary-color);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  color: var(--secondary-color);
 }
 .newsletter-bx {
   background: var(--secondary-color);

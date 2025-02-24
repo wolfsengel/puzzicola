@@ -28,6 +28,59 @@ export const Skills = () => {
         },
     };
 
+    const CustomLeftArrow = ({ onClick }) => {
+        return (
+            <button 
+                onClick={onClick} 
+                className="custom-arrow custom-arrow-left"
+                style={{
+                    position: 'absolute',
+                    left: '0',
+                    top: '50%',
+                    transform: 'translateY(-50%)',
+                    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+                    border: 'none',
+                    borderRadius: '50%',
+                    width: '40px',
+                    height: '40px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    cursor: 'pointer',
+                    zIndex: 1
+                }}
+            >
+                <span style={{ color: 'white', fontSize: '1.5rem' }}>&#9664;</span>
+            </button>
+        );
+    };
+    
+    const CustomRightArrow = ({ onClick }) => {
+        return (
+            <button 
+                onClick={onClick} 
+                className="custom-arrow custom-arrow-right"
+                style={{
+                    position: 'absolute',
+                    right: '0',
+                    top: '50%',
+                    transform: 'translateY(-50%)',
+                    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+                    border: 'none',
+                    borderRadius: '50%',
+                    width: '40px',
+                    height: '40px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    cursor: 'pointer',
+                    zIndex: 1
+                }}
+            >
+                <span style={{ color: 'white', fontSize: '1.5rem' }}>&#9654;</span>
+            </button>
+        );
+    };
     const images = [skillImage1, skillImage2, skillImage3, skillImage4, skillImage5];
     const items = texts.services.categories.map((service, index) => ({
         src: images[index],
@@ -37,19 +90,28 @@ export const Skills = () => {
 
     return (
         <>
-            <div id="skills" style={{ height: "100px" }}></div>
-            <section className="skill" >
+            <div id="skills" style={{ height: "20vh" }}></div>
+            <section className="skill">
                 <Container>
                     <Row>
                         <Col>
-                            <div className="skill-bx bordered" >
-                                <h2>Servicios</h2>
-                                <p>Hacemos muchas cosas y molamos mucho de verdad, creeme</p>
-                                <Carousel responsive={responsive} infinite={true} className="skill-slider">
+                            <div className="skill-bx">
+                                <h2 style={{ fontSize: "5rem" }}>Servicios</h2>
+                                <p style={{ fontSize: "1.25rem" }}>Hacemos muchas cosas y más...</p>
+                                <Carousel 
+                                    responsive={responsive} 
+                                    infinite={true} 
+                                    autoPlay={true} 
+                                    autoPlaySpeed={1000} 
+                                    transitionDuration={1000} 
+                                    className="skill-slider"
+                                    customLeftArrow={<CustomLeftArrow />}
+                                    customRightArrow={<CustomRightArrow />}
+                                >
                                     {items.map((item, index) => (
-                                        <div className="item" key={index}>
-                                            <img src={item.src} alt={item.alt} />
-                                            <h5>{item.title}</h5>
+                                        <div key={index} className="item">
+                                            <img src={item.src} alt={item.alt} style={{ width: "100%", height: "auto", maxHeight: "300px" }} />
+                                            <h5 style={{ fontSize: "1.5rem", marginTop: "10px" }}>{item.title}</h5>
                                         </div>
                                     ))}
                                 </Carousel>
@@ -58,6 +120,7 @@ export const Skills = () => {
                     </Row>
                 </Container>
             </section>
+            <div  style={{ height: "30vh" }}></div>
         </>
-    )
+    );
 }
