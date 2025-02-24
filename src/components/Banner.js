@@ -55,10 +55,9 @@ export const Banner = () => {
           <Col xs={12} md={6} xl={7}>
             <TrackVisibility>
               {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn bordered" : "bordered"}>
+              <div >
                 <h1 style={{ fontSize: '4rem' }}>{`Somos `} <span className="txt-rotate" dataPeriod="1000"><span className="wrap">{text}</span></span></h1>
                   <p style={{ fontSize: '2rem' }}>{texts.principalText.content}</p>
-                  <a href="#contact"><button style={{ fontSize: '2rem', padding: '15px 30px' }} >Conócenos <ArrowRightCircle size={30} /></button></a>
               </div>}
             </TrackVisibility>
           </Col>
@@ -72,6 +71,7 @@ export const Banner = () => {
           </Col>
         </Row>
       </Container>
+      <Container style={{ height: "8vh" }} />
     </section>
   )
 }
