@@ -21,9 +21,9 @@ export const Contact = () => {
                                         <h4>Contact Information</h4>
                                     </Col>
                                     <Col id="contactBtns" md={12} className="d-flex flex-column align-items-center">
-                                        <button style={{ width: "30vh", marginBottom: "10px" }} className="new-email" onClick={() => window.location.href = 'tel:+1234567890'} onMouseOver={(e) => e.target.innerText = 'Llámanos'} onMouseOut={(e) => e.target.innerText = '+1234567890'}><span>+34 639 758 034</span></button>
-                                        <button style={{ width: "30vh", marginBottom: "10px" }} className="mb-2" onClick={() => window.location.href = 'mailto:info@example.com'} onMouseOver={(e) => e.target.innerText = 'Envíanos un email'} onMouseOut={(e) => e.target.innerText = 'info@example.com'}><span>info@puzzicola.com</span></button>
-                                        <button style={{ width: "30vh", marginBottom: "10px" }} onClick={() => window.open('https://www.instagram.com/puzzi.cola.publi/', '_blank')} onMouseOver={(e) => e.target.innerText = 'Síguenos en Instagram'} onMouseOut={(e) => e.target.innerText = '@yourprofile'}><span>@puzzi.cola.publi</span></button>
+                                        <button style={{ width: "40vh", marginBottom: "10px" }} className="new-email" onClick={() => window.location.href = 'tel:+1234567890'} onMouseOver={(e) => e.target.innerText = 'Llámanos'} onMouseOut={(e) => e.target.innerText = '+34 686 407 175'}><span>+34 686 407 175</span></button>
+                                        <button style={{ width: "40vh", marginBottom: "10px" }} className="mb-2" onClick={() => window.location.href = 'mailto:info@example.com'} onMouseOver={(e) => e.target.innerText = 'Envíanos un email'} onMouseOut={(e) => e.target.innerText = 'puzzi.cola.publi@gmail.com'}><span>puzzi.cola.publi@gmail.com</span></button>
+                                        <button style={{ width: "40vh", marginBottom: "10px" }} onClick={() => window.open('https://www.instagram.com/puzzi.cola.publi/', '_blank')} onMouseOver={(e) => e.target.innerText = 'Síguenos en Instagram'} onMouseOut={(e) => e.target.innerText = '@puzzi.cola.publi'}><span>@puzzi.cola.publi</span></button>
                                     </Col>
                                 </Row>
                             </form>
