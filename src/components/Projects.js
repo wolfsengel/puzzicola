@@ -1,8 +1,10 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { ProjectCard } from "./ProjectsCard";
-import projImg1 from "../assets/img/horse-caring.jpg";
-import projImg2 from "../assets/img/horse-caring.jpg";
-import projImg3 from "../assets/img/horse-caring.jpg";
+import projImg1 from "../assets/img/COPY.png";
+import projImg2 from "../assets/img/DISEÑO.png";
+import projImg3 from "../assets/img/EVENTOS.png";
+import projImg4 from "../assets/img/FEED MACALA (18).png";
+import projImg5 from "../assets/img/GEST. REDES.png";
 import TrackVisibility from 'react-on-screen';
 
 export const Projects = () => {
@@ -20,8 +22,18 @@ export const Projects = () => {
     {
       title: 'Pim Pam Toma Lacasitos.com',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      imgUrl: projImg4,
+    },
+    {
+      title: 'Gestión de Redes Sociales',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      imgUrl: projImg5,
+    },
+    {
+      title: 'Eventos y Actividades',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
       imgUrl: projImg3,
-    }
+    },
   ]
 
   return (
