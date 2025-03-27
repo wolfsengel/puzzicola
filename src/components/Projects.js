@@ -1,38 +1,44 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { ProjectCard } from "./ProjectsCard";
-import projImg1 from "../assets/img/COPY.png";
-import projImg2 from "../assets/img/DISEÑO.png";
-import projImg3 from "../assets/img/EVENTOS.png";
-import projImg4 from "../assets/img/FEED MACALA (18).png";
-import projImg5 from "../assets/img/GEST. REDES.png";
+import projImg1 from "../assets/img/A TABERNA DE ÁLVARO.png";
+import projImg2 from "../assets/img/CAFÉ PARÍS.png";
+import projImg3 from "../assets/img/ESCUELA DE MÚSICOS.png";
+import projImg4 from "../assets/img/KICKSTRICKER1.png";
+import projImg5 from "../assets/img/MACALA1.png";
+import projImg6 from "../assets/img/NVOGUE.png";
 import TrackVisibility from 'react-on-screen';
 
 export const Projects = () => {
   const projects = [
     {
-      title: 'Joyería Paquita',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      imgUrl: projImg1,
-    },
-    {
-      title: 'Escuela de Musica Josefinos',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      imgUrl: projImg2,
-    },
-    {
-      title: 'Pim Pam Toma Lacasitos.com',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      title: 'Kickstricker',
+      description: '',
       imgUrl: projImg4,
     },
     {
-      title: 'Gestión de Redes Sociales',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      title: 'Escuela de Músicos',
+      description: '',
+      imgUrl: projImg3,
+    },
+    {
+      title: 'Macala',
+      description: '',
       imgUrl: projImg5,
     },
     {
-      title: 'Eventos y Actividades',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      imgUrl: projImg3,
+      title: 'A taberna de Álvaro',
+      description: '',
+      imgUrl: projImg1,
+    },
+    {
+      title: 'Nvogue',
+      description: '',
+      imgUrl: projImg6,
+    },
+    {
+      title: 'Café Bar París',
+      description: '',
+      imgUrl: projImg2,
     },
   ]
 
@@ -48,7 +54,7 @@ export const Projects = () => {
                 {({ isVisible }) =>
                   <div>
                     <h2 style={{ fontSize: "5rem" }}>Projects</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <p></p>
                     <div className="project-bx">
                       <Row>
                         {

@@ -1,11 +1,11 @@
 import { Container, Row, Col } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import skillImage1 from '../assets/img/skillimage1.jpg';
-import skillImage2 from '../assets/img/skillimage2.jpg';
-import skillImage3 from '../assets/img/skillimage3.jpg';
-import skillImage4 from '../assets/img/skillimage4.jpg';
-import skillImage5 from '../assets/img/skillimage5.jpg';
+import skillImage1 from '../assets/img/GEST. REDES.png';
+import skillImage2 from '../assets/img/FOTO.png';
+import skillImage3 from '../assets/img/EVENTOS.png';
+import skillImage4 from '../assets/img/COPY.png';
+import skillImage5 from '../assets/img/DISEÑO.png';
 import texts from '../assets/texts/texts.json';
 
 export const Skills = () => {
@@ -109,7 +109,11 @@ export const Skills = () => {
                                     customRightArrow={<CustomRightArrow />}
                                 >
                                     {items.map((item, index) => (
-                                        <div key={index} className="item">
+                                        <div 
+                                            key={index} 
+                                            className="item" 
+                                            style={{ margin: "0 15px" }} 
+                                        >
                                             <img src={item.src} alt={item.alt} style={{ width: "100%", height: "auto", maxHeight: "300px" }} />
                                             <h5 style={{ fontSize: "1.5rem", marginTop: "10px" }}>{item.title}</h5>
                                         </div>
@@ -120,7 +124,7 @@ export const Skills = () => {
                     </Row>
                 </Container>
             </section>
-            <div  style={{ height: "30vh" }}></div>
+            <div style={{ height: "30vh" }}></div>
         </>
     );
 }
